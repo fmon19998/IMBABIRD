@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>IMBA BIRD - Extreme Hardcore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-wrap">
+    <canvas id="game" width="450" height="800"></canvas>
+
+    <div id="start-screen" class="panel active">
+      <img src="assets/logo.png" class="logo" alt="IMBA BIRD Logo" />
+      <h1>IMBA BIRD</h1>
+      <p class="tagline">1 rintangan = Rp100</p>
+      <p class="warning">Mode sekarang lebih susah: celah makin sempit, pipa makin cepat, dan ada gerakan jebakan.</p>
+      <div class="coin-pill">Koin Skin: <b id="menuCoins">0</b></div>
+      <button id="startBtn">START GAME</button>
+      <button id="shopBtn" class="secondary">TOKO SKIN</button>
+      <div class="mini-info">Tap / Klik / Space untuk terbang</div>
+    </div>
+
+    <div id="shop-screen" class="panel shop-panel">
+      <h2>TOKO SKIN</h2>
+      <p class="tagline small">Kumpulkan koin dari score buat beli skin.</p>
+      <div class="coin-pill big">Koin: <b id="shopCoins">0</b></div>
+      <div id="skinGrid" class="skin-grid"></div>
+      <button id="backBtn" class="secondary">KEMBALI</button>
+    </div>
+
+    <div id="gameover-screen" class="panel">
+      <h2 id="resultTitle">GAME OVER</h2>
+      <p id="resultText">Kamu menabrak rintangan!</p>
+      <div class="result-box">
+        <div>Score: <b id="finalScore">0</b></div>
+        <div>Reward: <b id="finalReward">Rp0</b></div>
+        <div>Koin didapat: <b id="earnedCoins">0</b></div>
+      </div>
+      <button id="restartBtn">MAIN LAGI</button>
+      <button id="shopBtn2" class="secondary">TOKO SKIN</button>
+      <button id="menuBtn" class="secondary">MENU</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
